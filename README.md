@@ -1,1 +1,1 @@
-![Trybe.jpeg]
+![](Trybe.jpeg)
