@@ -26,6 +26,7 @@
             margin-bottom: 50px;
             padding-top: 50px;
             text-align: center;
+            font-family: 'Roboto', sans-serif;
             background-color: #F7FE2E;
         }
 
@@ -69,10 +70,23 @@
             margin-bottom: 12px;
         }
 
-        .content p {
-            font-size: 20px;
+        .content h4 {
+            margin-bottom: 12px;
         }
 
+        .content p {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        table {
+            margin-bottom: 10px;    
+        }
+
+        #main-list li {
+            list-style: none;
+            font-size: 20px;
+        }
 
 
     </style>
@@ -100,12 +114,10 @@
             <h2>Fatos sobre o Stomatopoda</h2>
             <section class="content">
                 <h3>Alguns dados sobre a criatura</h3>
-                <p>
-                    Nome científico: Odontodactylus scyllarus
-                </p>
-    
+        
                 <table>
-                    <ul>
+                    <ul id="main-list">
+                        <li>Nome científico: Odontodactylus scyllarus</li>
                         <li>Reino: Animalia</li>
                         <li>Filo: Arthropoda</li>
                         <li>Subfilo: Crustacea</li>
@@ -116,7 +128,7 @@
                 </table>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>Predadores ativos</h4>
                 <p>
                     Os estomatópodes são predadores ativos que caçam presas com o auxílio de um sentido 
