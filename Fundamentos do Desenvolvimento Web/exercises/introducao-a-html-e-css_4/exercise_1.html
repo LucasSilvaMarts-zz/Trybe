@@ -5,12 +5,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Conheça o Stomatopoda</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #F2F2F2;
+        }
+
+        nav {
+            height: 65px;
+            margin-bottom: 50px;
+            padding-top: 50px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            background-color: #F7FE2E;
+        }
+
+        #nav li {
+            display: inline;
+            margin: 100px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #151515;
+        }
+
+        li a:hover {
+            color: #BDBDBD;
+        }
+
+        header {
+            text-align: center;
+            font-family: 'Castoro', serif;
+            letter-spacing: 2px;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        main {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        article h2 {
+            font-family: 'Castoro', serif;
+            margin-bottom: 5px;
+        }
+
+        .content h3 {
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .content h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .content p {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            text-align: justify;
+        }
+
+        .content a {
+            display: block;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .content-ref h6 {
+            margin: 10px 0 10px 0;
+        }
+
+        .content-ref p {
+            font-size: 15px;
+        }
+
+        .content img {
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin-bottom: 10px;    
+        }
+
+        #main-list li {
+            list-style: none;
+            font-size: 20px;
+        }
+
+        footer {
+            height: 100px;
+            background-color: #2E2E2E;
+            margin-top: 35px;
+        }
+
+        footer p {
+            text-align: center;
+            padding-top: 50px;
+            color: #F2F2F2;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <nav>
-        <ul>
+        <ul id="nav">
             <li><a href="#">Página Inicial</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
@@ -20,20 +139,18 @@
     <header>
         <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
         <img src="https://4.bp.blogspot.com/-nCRuuIIK7Bk/VVUbUSNT16I/AAAAAAAAA8M/CP3mDt2s6Gk/s1600/uw-2010-06-11.jpg"
-            width="550px" alt="foto">
+            width="600px" alt="foto">
     </header>
 
     <main>
         <article>
             <h2>Fatos sobre o Stomatopoda</h2>
-            <section>
+            <section class="content">
                 <h3>Alguns dados sobre a criatura</h3>
-                <p>
-                    Nome científico: Odontodactylus scyllarus
-                </p>
-    
+        
                 <table>
-                    <ul>
+                    <ul id="main-list">
+                        <li>Nome científico: Odontodactylus scyllarus</li>
                         <li>Reino: Animalia</li>
                         <li>Filo: Arthropoda</li>
                         <li>Subfilo: Crustacea</li>
@@ -44,7 +161,7 @@
                 </table>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>Predadores ativos</h4>
                 <p>
                     Os estomatópodes são predadores ativos que caçam presas com o auxílio de um sentido 
@@ -54,7 +171,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>Habitat</h4>
                 <p>
                     Eles vivem em fundo consolidado, 
@@ -63,7 +180,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>Alimentação</h4>
                 <img src="https://pbs.twimg.com/media/EYaMX6BWAAIeUN2.jpg" width="500px" alt="">
                 <p>
@@ -72,7 +189,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>Defesa</h4>
                 <img src="https://static.natgeo.pt/files/styles/image_3200/public/animais-estranhos-lagosta-2.jpg?w=1200&h=900" width="500px" alt="">
                 <p>O segundo par de patas, muito desenvolvido, é usado tanto para atacar a presa como para se defender. 
@@ -88,7 +205,7 @@
                 </p>
             </section>
 
-            <section>
+            <section class="content">
                 <h4>A fêmea e a reprodução</h4>
                 <p>
                     A fêmea desova no local onde se abriga e, em caso de perigo, enrola os ovos como uma bola, prendendo-os junto ao 
@@ -100,7 +217,7 @@
                 <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE">Veja o animal em ação</a>
             </section>
 
-            <section>
+            <section class="content-ref">
                 <h6>Referências bibliográficas</h6>
                 <p>
                     https://pt.wikipedia.org/wiki/Stomatopoda
