@@ -14,3 +14,4 @@ if (a > b && a > c) {
 } else {
   console.log('O c é o maior ' + c)
 }
+
