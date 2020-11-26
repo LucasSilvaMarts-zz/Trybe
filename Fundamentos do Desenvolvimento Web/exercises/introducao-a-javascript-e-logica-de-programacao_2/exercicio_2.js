@@ -7,8 +7,10 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let soma = 0;
 
-for(let i in numbers) {
-  soma += numbers[i]
+for(let valor in numbers) {
+  soma += numbers[valor]
 }
 
 console.log(soma);
+
+// como funciona o for in?
