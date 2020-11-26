@@ -7,10 +7,11 @@ A média aritmética é o resultado da soma de todos os elementos divido pelo n�
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let soma = 0;
-let total ;
+let total = 0;
 
 for(let i = 0; i < numbers.length; i += 1) {
- total = soma += numbers[i] / numbers.length
+  soma += numbers[i] 
 }
 
-console.log(total)
+console.log(soma / numbers.length)
+
