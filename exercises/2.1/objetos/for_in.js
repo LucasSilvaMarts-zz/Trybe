@@ -13,5 +13,5 @@ let car = {
 }; 
 
 for(i in car) {
-  console.log(i, car[i]); 
+  console.log(i, car[i]); // Acessa também a propriedade do objeto
 }
