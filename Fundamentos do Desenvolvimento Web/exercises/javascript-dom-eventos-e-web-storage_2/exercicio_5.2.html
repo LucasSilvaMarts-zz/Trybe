@@ -131,6 +131,24 @@
       Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. 
       Essa lista deve ser filha do div criado no passo 6;
       */
+      
+      let label = ['Um', 'Dois', 'Três' , 'Quatro' , 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+      const list = document.createElement('ul');
+
+
+      for (let index = 0; index < 10; index += 1) {
+
+      const li = document.createElement('li');        
+
+        li.innerHTML = label[index]
+        
+        list.appendChild(li);
+      }
+
+      document.querySelector('.right-content').appendChild(list);
+
+      
 
       // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
     </script>
