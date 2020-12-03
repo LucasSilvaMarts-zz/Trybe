@@ -90,7 +90,15 @@
       document.querySelector('.main-content').appendChild(div2);
 
 
-      // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+      // Adicione a tag p como filho da div criada no passo 3 e coloque algum texto;
+
+      const p = document.createElement('p');
+
+      p.innerHTML = 'Hey, tryber';
+
+      // ATENÇÃO: querySelector não seleciona variáveis, só Id, classes e elementos
+
+      document.querySelector('.center-content').appendChild(p);
 
       // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 
