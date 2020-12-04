@@ -151,8 +151,12 @@
     
       // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
 
+      let h3;
+
       for (let index = 0; index < 3; index += 1) {
-        const h3 = document.createElement('h3');
+      h3 = document.createElement('h3');
+
+      h3.className = 'description' // Adiciona a classe description ao elemento
 
         document.querySelector('.main-content').appendChild(h3)
       } 
@@ -168,6 +172,7 @@
       h1.className = 'title';
 
       // Adicione a classe description nas 3 tags h3 criadas;
+
 
       /* Remova o div criado no passo 5 (aquele que possui a classe left-content ). 
       Utilize a função .removeChild(); */ 
