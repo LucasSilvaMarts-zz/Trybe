@@ -23,13 +23,38 @@ function calendarDays() {
   const daysNumber = document.querySelector('#days');
 
   for(let index = 0; index < dezDaysList.length; index += 1) {
-    const days = dezDaysList[index];
+    const day = dezDaysList[index];
     const dayListItem = document.createElement('li'); 
     
-    dayListItem.classList.add('days'); // Adiciona a classe days em todos os li
-    dayListItem.innerHTML = days; 
+    dayListItem.classList.add('day'); // Adiciona a classe days em todos os li
+    dayListItem.innerHTML = day; 
 
     daysNumber.appendChild(dayListItem);
+
+    // Adiciona a classe holiday
+    if (day === 24) {
+      dayListItem.classList.add('holiday')
+    };
+    if (day === 25) {
+      dayListItem.classList.add('holiday')
+    };
+    if (day === 31) {
+      dayListItem.classList.add('holiday')
+    };
+
+    // Adiciona a classe friday
+    if (day === 4) {
+      dayListItem.classList.add('friday')
+    };
+    if (day === 11) {
+      dayListItem.classList.add('friday')
+    };
+    if (day === 18) {
+      dayListItem.classList.add('friday')
+    };
+    if (day === 25) {
+      dayListItem.classList.add('friday')
+    };
   };
   
 };
