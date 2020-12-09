@@ -164,3 +164,17 @@ function addZoomOut() {
 };
 
 addZoomOut()
+
+// Exercício 7
+
+function addTask(task) {
+  const createTaskSpan = document.createElement('span')
+  const addSpan = document.querySelector('.my-tasks')
+
+  addSpan.appendChild(createTaskSpan)
+
+  createTaskSpan.innerHTML = task
+}
+
+addTask('Minha tarefa')
+
