@@ -83,7 +83,7 @@ holidaysBtn('Feriados')
 function clickHolidaysBtn() {
   const btn = document.querySelector('#btn-holiday'); 
   const changeBgColor = document.querySelectorAll('.holiday');  
-  console.log(changeBgColor)
+
 
   btn.addEventListener('click', function() {
     for(index = 0; index < changeBgColor.length; index += 1) {
@@ -118,6 +118,28 @@ function sextaFeira(friday) {
 };
 
 sextaFeira('Sexta-feira')
+
+// Exercício 5 
+
+function clickFridayBtn() {
+  const btn = document.querySelector('#btn-friday');
+  const fridayDays = document.querySelectorAll('.friday');
+  
+
+  btn.addEventListener('click', function(){
+    for(let index = 0; index < fridayDays.length; index += 1) {
+      let changeText = fridayDays[index]
+      
+
+      if(changeText.innerText !== 'Sexta-feira') {
+        changeText.innerText = 'Sextou';
+      }
+    }
+  });
+  
+};
+
+clickFridayBtn()
 
 
 
