@@ -103,6 +103,21 @@ function clickHolidaysBtn() {
 
 clickHolidaysBtn();
 
+// Exercício 4 
+
+function sextaFeira(friday) {
+  const btn = document.createElement('button');
+  const buttonsContainer = document.querySelector('.buttons-container');
+
+  btn.id = 'btn-friday';
+
+  buttonsContainer.appendChild(btn);
+
+  btn.innerHTML = friday;
+
+};
+
+sextaFeira('Sexta-feira')
 
 
 
