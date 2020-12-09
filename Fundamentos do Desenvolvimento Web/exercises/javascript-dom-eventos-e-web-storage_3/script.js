@@ -72,10 +72,37 @@ function holidaysBtn(feriados) {
 
   buttonsContainer.appendChild(btn);
   
-  btn.innerHTML = feriados
+  btn.innerHTML = feriados;
 
 };
 
 holidaysBtn('Feriados')
+
+// Exercício 3
+
+function clickHolidaysBtn() {
+  const btn = document.querySelector('#btn-holiday'); 
+  const changeBgColor = document.querySelectorAll('.holiday');  
+  console.log(changeBgColor)
+
+  btn.addEventListener('click', function() {
+    for(index = 0; index < changeBgColor.length; index += 1) {
+      let color = changeBgColor[index]
+    
+      if(color.style.backgroundColor === 'green') {
+        color.style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        color.style.backgroundColor = 'green';
+        
+      }
+    }
+  
+  })
+
+};
+
+clickHolidaysBtn();
+
+
 
 
