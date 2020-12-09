@@ -141,5 +141,26 @@ function clickFridayBtn() {
 
 clickFridayBtn()
 
+// Exercício 6 
 
+function addZoomIn() {
+  const selectdays = document.querySelector('#days');
 
+  selectdays.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+  });
+  
+};
+
+addZoomIn()
+
+function addZoomOut() {
+  const selectdays = document.querySelector('#days');
+
+  selectdays.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+  });
+
+};
+
+addZoomOut()
