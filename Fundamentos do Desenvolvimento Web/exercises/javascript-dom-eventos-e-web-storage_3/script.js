@@ -61,5 +61,21 @@ function calendarDays() {
 
 calendarDays();
 
+// Exercício 2
+
+function holidaysBtn(feriados) {
+  
+  const btn = document.createElement('button');
+  const buttonsContainer = document.querySelector('.buttons-container');
+
+  btn.id = 'btn-holiday';
+
+  buttonsContainer.appendChild(btn);
+  
+  btn.innerHTML = feriados
+
+};
+
+holidaysBtn('Feriados')
 
 
