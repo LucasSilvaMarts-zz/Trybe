@@ -168,13 +168,29 @@ addZoomOut()
 // Exercício 7
 
 function addTask(task) {
-  const createTaskSpan = document.createElement('span')
-  const addSpan = document.querySelector('.my-tasks')
+  const createTaskSpan = document.createElement('span');
+  const addSpan = document.querySelector('.my-tasks');
 
-  addSpan.appendChild(createTaskSpan)
+  addSpan.appendChild(createTaskSpan);
 
-  createTaskSpan.innerHTML = task
-}
+  createTaskSpan.innerHTML = task;
+};
 
 addTask('Minha tarefa')
+
+// Exercício 8
+
+function addLabelTask(cor) {
+  const taskDiv = document.createElement('div');
+  const myTask = document.querySelector('.my-tasks');
+
+  taskDiv.classList.add('task');
+
+  myTask.appendChild(taskDiv);  
+
+  taskDiv.style.backgroundColor = cor 
+  
+};
+
+addLabelTask('green');
 
