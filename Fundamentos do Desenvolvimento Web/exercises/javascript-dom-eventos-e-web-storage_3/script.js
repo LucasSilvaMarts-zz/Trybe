@@ -212,3 +212,28 @@ function selectTask() {
 }
 
 selectTask()
+
+// Exercício 10 
+
+function addEventDay() {
+  const calendarDays = document.querySelector('#days')
+
+  // Adiciona o evento 
+  calendarDays.addEventListener('click', function(event) {
+    // seleciona a classe selected do elemento
+    const selected = document.querySelector('.selected')
+    let bgColor = selected.style.backgroundColor;
+
+    // verifico qual é a cor padrão 
+    if (event.target.style.color === bgColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+    } else {
+      event.target.style.color = bgColor;
+    }
+  })
+  
+
+  console.log(calendarDays)
+} 
+
+addEventDay()
