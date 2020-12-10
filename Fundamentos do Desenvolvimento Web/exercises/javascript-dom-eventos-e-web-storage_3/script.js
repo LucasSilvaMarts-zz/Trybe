@@ -232,8 +232,34 @@ function addEventDay() {
     }
   })
   
-
-  console.log(calendarDays)
 } 
 
 addEventDay()
+
+// Bônus
+
+function addCommitments() {
+  const input = document.querySelector('#task-input');
+  const btn = document.querySelector('#btn-add');
+  const list = document.querySelector('.task-list');
+
+ function addCommitmentsToList(event) {
+  if (event.keyCode === 13 || event.type === 'click') {
+    if (input.value !== '') {
+      // Criando uma nova li 
+      const newCommitments = document.createElement('li');
+      newCommitments.className = 'commitments'
+      // adiciona o valor do input 
+      newCommitments.innerText = input.value
+      // adiciona a li ao elemento pai
+      list.appendChild(newCommitments);
+    } else {
+      alert('Você precisa escrever uma tarefa.')
+    }
+  }
+ }
+  input.addEventListener('keyup', addCommitmentsToList);
+  btn.addEventListener('click', addCommitmentsToList);
+}
+
+addCommitments()
