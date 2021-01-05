@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
+
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
   </head>
 
   <body>
@@ -11,83 +13,108 @@
     <form action="">
 
       <fieldset>
-        <label for="">
-          Nome 
-          <input type="text">
-        </label>
+        <div class="control">
+          <label for="">Nome</label>
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
   
-        <label for="">
-          Email
-          <input type="text">
-        </label>
+        <div class="control">
+          <label for="">Email</label>
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
-        <label for="">
-          CPF 
-          <input type="text">
-        </label>
+        
+        <div class="control">
+          <label for="">CPF</label>
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
-        <label for="">
-          Endereço 
-          <input type="text">
-        </label>
+        
+        <div class="control">
+          <label for="">Endereço</label>
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
-        <label for="">
-          Cidade 
-          <input type="text">
-        </label>
-  
-        <br>
-  
-        <label for="">
-          Estado 
-          <select name="" id="">
-            <!--<option></option>-->
-          </select>
-        </label>
+        
+        <div class="control">
+          <label for="">Cidade</label>
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
   
-        <label for="">
-          Apartamento   
-          <input type="radio">
-         
-          Casa
-          <input type="radio">
-        </label>
+        <div class="control">
+          <div class="select">
+            <select name="" id="">
+              <option>Selecione o Estado</option>
+            </select>
+          </div>
+        </div>
+  
+        <br>
+  
+        <div class="control">
+          <label for="" class="radio">
+            Apartamento   
+            <input type="radio">
+          </label>
+          <label for="" class="radio">
+            Casa
+            <input type="radio">
+          </label>
+        </div>
       </fieldset>
   
       <fieldset>
+
+        <br>
+
+        <textarea class="textarea" placeholder="Resumo do currículo"></textarea>
+ 
+        <br>
   
-        <label for="">
-          Resumo do Currículo
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </label>
+       <div class="control">
+        <label for="">Cargo</label>
+
+        <div class="field">
+          <input type="text" class="input">
+        </div>
+       </div>
   
         <br>
   
-        <label for="">
-          Cargo
-          <input type="text">
-        </label>
+        <div class="control">
+          <label for="">Descrição do Cargo</label>
+          
+          <div class="field">
+            <input type="text" class="input">
+          </div>
+        </div>
   
         <br>
   
-        <label for="">
-          Descrição do Cargo
-          <input type="text">
-        </label>
-  
-        <br>
-  
-        <label for="">
-          Data de Início
-          <input type="datetime">
-        </label>
+        <div class="control">
+          <label for="">Data de Início</label>
+
+          <div class="field">
+            <input type="datetime" class="input">
+          </div>
+        </div>
       </fieldset>
   
 
