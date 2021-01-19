@@ -63,12 +63,11 @@ const books = [
   },
 ];
 
-const expectedResult = false
+const expectedResult = true
 
-function everyoneWasBornOnSecXX() {
+function someBookWasReleaseOnThe80s() {
   // escreva seu código aqui
-
-  return books.every((books) => books.author.birthYear > 1900 && books.author.birthYear < 2000)
+  return books.some((books) => books.releaseYear > 1800 && books.releaseYear < 1900)
 }
 
-assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
