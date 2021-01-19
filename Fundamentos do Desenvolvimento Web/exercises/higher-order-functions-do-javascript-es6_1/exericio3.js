@@ -81,7 +81,7 @@ function getNamedBook() {
       return book.name.length === 26;
   })
 
-  return nameBook
+  return nameBook  
 }
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);
