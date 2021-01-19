@@ -63,21 +63,19 @@ const books = [
   },
 ];
 
-const expectedResult = false;
+const expectedResult = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft'
+];
 
-function authorUnique() {
+function formatedBookNames() {
   // escreva seu código aqui
-  const findItem = books.every((book) => {
-
-    const authorBirthYear = book.author.birthYear;
-
-       !books.some((bookSome) => {
-
-      bookSome.author.birthYear === authorBirthYear && bookSome.author.birthYear !== authorBirthYear;
-    })
-  })
-
-    return findItem
 }
 
-assert.strictEqual(authorUnique(), expectedResult);
+assert.deepStrictEqual(formatedBookNames(), expectedResult);
+
+// Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
