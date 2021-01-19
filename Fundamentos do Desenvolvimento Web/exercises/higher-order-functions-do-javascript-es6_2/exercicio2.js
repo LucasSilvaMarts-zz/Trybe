@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { NOMEM } = require('dns');
 
 const books = [
   {
@@ -92,6 +93,21 @@ const expectedResult = [
 
 function nameAndAge() {
   // escreva seu código aqui
+  // Construa um array de objetos a partir do array de livros.
+  // Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, 
+  //e uma propriedade age com a idade dessa pessoa quando o livro foi lançado.
+
+  // O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais 
+  // velha considerando suas idades quando o livro foi lançado
+
+  return books
+  .map(book => ({
+    author: book.author.name,
+    age: book.releaseYear - book.author.birthYear
+  }))
+  .sort((itemA, itemB) => itemA.age - itemB.age);
+
+  
 }
 
 assert.deepStrictEqual(nameAndAge(), expectedResult);
