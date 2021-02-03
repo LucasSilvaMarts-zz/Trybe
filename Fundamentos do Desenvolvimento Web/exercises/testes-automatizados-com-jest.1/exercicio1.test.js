@@ -26,3 +26,10 @@ test('sums 0 + 0 = 0', () => {
 test('parameter must to be a number', () => {
   expect(() => { sum(4, '5') }).toThrow();
  });
+
+// Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")
+
+test('Message must be "parameters must be numbers"', () => {
+  expect(() => { sum(4, '5') }).toThrowError("parameters must be numbers");
+});
+
