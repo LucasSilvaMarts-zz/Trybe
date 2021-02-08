@@ -3,6 +3,8 @@ O código a seguir simula uma chamada ao banco de dados para buscar usuários.
 O resultado dessa busca é uma Promise, que é utilizada pelo método getUserName .
 */
 
+const { TestScheduler } = require("jest");
+
 const users = {
  4 : { name: 'Mark' },
  5 : { name: 'Paul' }
@@ -30,3 +32,8 @@ const users = {
   para saber quais IDs existem.
   */
 
+describe('caso em que o usuário é encontrado', () => {
+  it('retorna o id do usuário', () => {
+
+  })
+})
