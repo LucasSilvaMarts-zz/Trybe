@@ -5,3 +5,8 @@ Utilizando o mock, defina o retorno padrão como 10.
 Teste se a função foi chamada, qual seu retorno e quantas vezes foi chamada.
 */
 
+const randomNumber = () => {
+  return Math.floor(Math.random() * 101);
+}
+
+module.exports = { randomNumber };
